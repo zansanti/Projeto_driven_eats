@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="reset.css"/>
+  <title>Driven Eats</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="site">
+    <div class="topo">
+      <div class="driven_eats">
+        <h1>Driven Eats</h1>
+      </div>
+      <div class="seisminutos">
+        <p>Sua comida em 6 minutos</p>
+      </div>
+    </div>
+
+    <div class="conteudo">
+      <div class="escolhas">
+        <h1>Primeiro, seu prato</h1>
+      </div>
+      <div class="refeicoes categoria-pratos">
+        <div class="prato" onclick="selecionar_pedido(this)">
+          <div class="check_escondido"><ion-icon name="checkmark-circle"></ion-icon></div>
+          <div class="imagem_prato"><img src="Imagens_Eats/pf_frango.jpg"></div>
+          <div class="titulo_prato">PF de Frango</div>
+          <div class="descricao_prato">Frango, arroz, feijão e salada</div>
+          <div class="preco_prato">R$ 18,90</div>
+        </div>
+        <div class="prato" onclick="selecionar_pedido(this)">
+          <div class="check_escondido"><ion-icon name="checkmark-circle"></ion-icon></div>
+          <div class="imagem_prato"><img src="Imagens_Eats/pf_calabresa.png"></div>
+          <div class="titulo_prato">PF de Calabresa</div>
+          <div class="descricao_prato">Calabresa, arroz, feijão e batata frita</div>
+          <div class="preco_prato">R$ 17,90</div>
+        </div>
+        <div class="prato" onclick="selecionar_pedido(this)">
+          <div class="check_escondido"><ion-icon name="checkmark-circle"></ion-icon></div>
+          <div class="imagem_prato"><img src="Imagens_Eats/pf_carne.jpg"></div>
+          <div class="titulo_prato">PF de Carne</div>
+          <div class="descricao_prato">Carne, ovo, arroz, feijão, batata frita e salada</div>
+          <div class="preco_prato">R$ 19,90</div>
+        </div>
+      </div>
+
+      <div class="escolhas">
+        <h1>Agora, sua bebida</h1>
+      </div>
+      <div class="refeicoes categoria-bebidas">
+        <div class="prato" onclick="selecionar_pedido(this)">
+          <div class="check_escondido"><ion-icon name="checkmark-circle"></ion-icon></div>
+          <div class="imagem_prato"><img src="Imagens_Eats/coca.png"></div>
+          <div class="titulo_prato">Coquinha gelada</div>
+          <div class="descricao_prato">Lata 350ml</div>
+          <div class="preco_prato">R$ 4,90</div>
+        </div>
+        <div class="prato" onclick="selecionar_pedido(this)">
+          <div class="check_escondido"><ion-icon name="checkmark-circle"></ion-icon></div>
+          <div class="imagem_prato"><img src="Imagens_Eats/suco.png"></div>
+          <div class="titulo_prato">Suco de laranja</div>
+          <div class="descricao_prato">Lata 350ml</div>
+          <div class="preco_prato">R$ 6,00</div>
+        </div>
+        <div class="prato" onclick="selecionar_pedido(this)">
+          <div class="check_escondido"><ion-icon name="checkmark-circle"></ion-icon></div>
+          <div class="imagem_prato"><img src="Imagens_Eats/fanta.png"></div>
+          <div class="titulo_prato">Fanta Laranja</div>
+          <div class="descricao_prato">Lata 350ml</div>
+          <div class="preco_prato">R$ 3,90</div>
+        </div>
+      </div>
+
+      <div class="escolhas">
+        <h1>Por fim, sua sobremesa</h1>
+      </div>
+      <div class="refeicoes categoria-sobremesas">
+        <div class="prato" onclick="selecionar_pedido(this)">
+          <div class="check_escondido"><ion-icon name="checkmark-circle"></ion-icon></div>
+          <div class="imagem_prato"><img src="Imagens_Eats/pudim.jpg"></div>
+          <div class="titulo_prato">Pudim</div>
+          <div class="descricao_prato">Somente pudim</div>
+          <div class="preco_prato">R$ 7,90</div>
+        </div>
+        <div class="prato" onclick="selecionar_pedido(this)">
+          <div class="check_escondido"><ion-icon name="checkmark-circle"></ion-icon></div>
+          <div class="imagem_prato"><img src="Imagens_Eats/brownie.jpg"></div>
+          <div class="titulo_prato">Brownie</div>
+          <div class="descricao_prato">Brownie de chocolate</div>
+          <div class="preco_prato">R$ 10,90</div>
+        </div>
+        <div class="prato" onclick="selecionar_pedido(this)">
+          <div class="check_escondido"><ion-icon name="checkmark-circle"></ion-icon></div>
+          <div class="imagem_prato"><img src="Imagens_Eats/mouse.jpg"></div>
+          <div class="titulo_prato">Mousse</div>
+          <div class="descricao_prato">Mousse de maracujá</div>
+          <div class="preco_prato">R$ 12,90</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fundo">
+      <div id="botao_fechar_pedido" class="botao_escolha">Selecione os 3 itens <br>para fechar seu pedido</div>
+    </div>
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Tela de detalhes do pedido -->
+    <div class="pedido-detalhes">
+      <!-- Conteúdo dos detalhes do pedido -->
+      <h2>Detalhes do Pedido</h2>
+      <!-- Adicione aqui informações dinâmicas do pedido, conforme necessário -->
+      <p>Item 1: PF de Frango - R$ 18,90</p>
+      <p>Bebida: Coquinha gelada - R$ 4,90</p>
+      <p>Sobremesa: Pudim - R$ 7,90</p>
+      <!-- Botões -->
+      <div class="botoes-detalhes">
+        <button id="confirmar-pedido" class="botao-detalhe">Tudo certo. Pode pedir!</button>
+        <button id="cancelar-pedido" class="botao-detalhe">Cancelar</button>
+      </div>
+      <!-- Fim do conteúdo dos detalhes do pedido -->
+    </div>
+  </div>
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
